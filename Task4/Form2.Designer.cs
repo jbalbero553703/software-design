@@ -1,24 +1,24 @@
-﻿namespace lab1
+﻿namespace Task4
 {
-	partial class Form1
-	{
-		/// <summary>
-		///  Required designer variable.
-		/// </summary>
-		private System.ComponentModel.IContainer components = null;
+    partial class Form2
+    {
+        /// <summary>
+        ///  Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
 
-		/// <summary>
-		///  Clean up any resources being used.
-		/// </summary>
-		/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-		protected override void Dispose(bool disposing)
-		{
-			if (disposing && (components != null))
-			{
-				components.Dispose();
-			}
-			base.Dispose(disposing);
-		}
+        /// <summary>
+        ///  Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
 
         #region Windows Form Designer generated code
 
@@ -34,7 +34,7 @@
             // 
             // btnSort
             // 
-            btnSort.Location = new Point(45, 27);
+            btnSort.Location = new Point(60, 196);
             btnSort.Name = "btnSort";
             btnSort.Size = new Size(172, 43);
             btnSort.TabIndex = 0;
@@ -44,23 +44,22 @@
             // 
             // listBoxResults
             // 
-            listBoxResults.Anchor = AnchorStyles.None;
             listBoxResults.FormattingEnabled = true;
-            listBoxResults.ItemHeight = 15;
-            listBoxResults.Location = new Point(254, 27);
+            listBoxResults.Location = new Point(258, 43);
             listBoxResults.Name = "listBoxResults";
             listBoxResults.Size = new Size(500, 349);
             listBoxResults.TabIndex = 1;
             // 
-            // Form1
+            // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(listBoxResults);
             Controls.Add(btnSort);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "Form2";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Form2";
             ResumeLayout(false);
         }
 
