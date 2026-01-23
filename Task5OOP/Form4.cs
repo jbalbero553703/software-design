@@ -1,11 +1,11 @@
 namespace Task5OOP
 {
-    public partial class Form1 : Form
+    public partial class Form4 : Form
     {
 
         public NumbersClass numbersClass = new NumbersClass();
 
-        public Form1()
+        public Form4()
         {
             InitializeComponent();
         }

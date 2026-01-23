@@ -8,26 +8,12 @@ namespace Task5OOP
 {
     public class NumbersClass
     {
-        public int[] numbers { get; set; } = { 3, 1, 5, 2, 4 };
+        public int[] numbers { get; set; } = { 47, 82, 19, 64, 35, 91, 28, 76, 53, 60 };
 
         public int[] ProceduralSort(int[] numbers)
         {
-            // Bubble Sort Descending Order
-            int temp;
-            int numLength = numbers.Length;
-
-            for (int i = 1; i <= (numLength - 1); i++)
-            {
-                for (int j = 0; j < (numLength - 1); j++)
-                {
-                    if (numbers[j + 1] > numbers[j])
-                    {
-                        temp = numbers[j];
-                        numbers[j] = numbers[j + 1];
-                        numbers[j + 1] = temp;
-                    }
-                }
-            }
+            Array.Sort(numbers);
+            Array.Reverse(numbers);
             return numbers;
         }
     }

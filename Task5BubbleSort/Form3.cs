@@ -1,8 +1,8 @@
 namespace Task5BubbleSort
 {
-    public partial class Form1 : Form
+    public partial class Form3 : Form
     {
-        public Form1()
+        public Form3()
         {
             InitializeComponent();
         }
@@ -29,7 +29,7 @@ namespace Task5BubbleSort
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int[] numbers = { 3, 1, 5, 2, 4 };
+            int[] numbers = { 88, 24, 67, 41, 95, 32, 79, 56, 14, 63 };
             int[] sortedNumbers = ProceduralSort(numbers);
             listBox1.DataSource = sortedNumbers;
         }

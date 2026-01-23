@@ -1,6 +1,6 @@
-﻿namespace Task5OOP
+﻿namespace Task5BubbleSort
 {
-    partial class Form1
+    partial class Form3
     {
         /// <summary>
         ///  Required designer variable.
@@ -34,31 +34,32 @@
             // 
             // button1
             // 
-            button1.Location = new Point(164, 132);
+            button1.Font = new Font("Sans Serif Collection", 8.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.Location = new Point(91, 201);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(141, 48);
             button1.TabIndex = 0;
-            button1.Text = "button1";
+            button1.Text = "Sort";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
             // listBox1
             // 
             listBox1.FormattingEnabled = true;
-            listBox1.Location = new Point(306, 62);
+            listBox1.Location = new Point(288, 88);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(287, 229);
+            listBox1.Size = new Size(421, 274);
             listBox1.TabIndex = 1;
             // 
-            // Form1
+            // Form3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(listBox1);
             Controls.Add(button1);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "Form3";
+            Text = "Form3";
             ResumeLayout(false);
         }
 
