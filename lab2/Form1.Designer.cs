@@ -28,44 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            btnCalculateFactorial = new Button();
             lblResult = new Label();
             txtInput = new TextBox();
             label2 = new Label();
             label3 = new Label();
             txtArrayInput = new TextBox();
             lblSumResult = new Label();
-            button2 = new Button();
+            btnCalculateSum = new Button();
             label5 = new Label();
             FiboInput = new TextBox();
             lblFiboResult = new Label();
-            button3 = new Button();
+            btnCalculateFibo = new Button();
             label7 = new Label();
             inputPower = new TextBox();
             lblPowerResult = new Label();
-            button4 = new Button();
+            btnCalculatePower = new Button();
             inputBase = new TextBox();
             label9 = new Label();
             label10 = new Label();
             SuspendLayout();
             // 
-            // button1
+            // btnCalculateFactorial
             // 
-            button1.Location = new Point(81, 127);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            btnCalculateFactorial.Location = new Point(81, 127);
+            btnCalculateFactorial.Name = "btnCalculateFactorial";
+            btnCalculateFactorial.Size = new Size(75, 23);
+            btnCalculateFactorial.TabIndex = 0;
+            btnCalculateFactorial.Text = "button1";
+            btnCalculateFactorial.UseVisualStyleBackColor = true;
+            btnCalculateFactorial.Click += btnCalculateFactorial_Click;
             // 
             // lblResult
             // 
             lblResult.AutoSize = true;
             lblResult.Location = new Point(187, 101);
             lblResult.Name = "lblResult";
-            lblResult.Size = new Size(38, 15);
+            lblResult.Size = new Size(58, 15);
             lblResult.TabIndex = 1;
-            lblResult.Text = "label1";
+            lblResult.Text = "Factorial: ";
             // 
             // txtInput
             // 
@@ -79,18 +80,18 @@
             label2.AutoSize = true;
             label2.Location = new Point(81, 80);
             label2.Name = "label2";
-            label2.Size = new Size(38, 15);
+            label2.Size = new Size(52, 15);
             label2.TabIndex = 3;
-            label2.Text = "label2";
+            label2.Text = "Factorial";
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Location = new Point(481, 83);
             label3.Name = "label3";
-            label3.Size = new Size(38, 15);
+            label3.Size = new Size(62, 15);
             label3.TabIndex = 7;
-            label3.Text = "label3";
+            label3.Text = "Array Sum";
             // 
             // txtArrayInput
             // 
@@ -104,27 +105,28 @@
             lblSumResult.AutoSize = true;
             lblSumResult.Location = new Point(587, 104);
             lblSumResult.Name = "lblSumResult";
-            lblSumResult.Size = new Size(38, 15);
+            lblSumResult.Size = new Size(37, 15);
             lblSumResult.TabIndex = 5;
-            lblSumResult.Text = "label4";
+            lblSumResult.Text = "Sum: ";
             // 
-            // button2
+            // btnCalculateSum
             // 
-            button2.Location = new Point(481, 130);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 4;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            btnCalculateSum.Location = new Point(481, 130);
+            btnCalculateSum.Name = "btnCalculateSum";
+            btnCalculateSum.Size = new Size(75, 23);
+            btnCalculateSum.TabIndex = 4;
+            btnCalculateSum.Text = "button2";
+            btnCalculateSum.UseVisualStyleBackColor = true;
+            btnCalculateSum.Click += btnCalculateSum_Click;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Location = new Point(81, 257);
             label5.Name = "label5";
-            label5.Size = new Size(38, 15);
+            label5.Size = new Size(58, 15);
             label5.TabIndex = 11;
-            label5.Text = "label5";
+            label5.Text = "Fibonacci";
             // 
             // FiboInput
             // 
@@ -138,27 +140,28 @@
             lblFiboResult.AutoSize = true;
             lblFiboResult.Location = new Point(187, 278);
             lblFiboResult.Name = "lblFiboResult";
-            lblFiboResult.Size = new Size(38, 15);
+            lblFiboResult.Size = new Size(31, 15);
             lblFiboResult.TabIndex = 9;
-            lblFiboResult.Text = "label6";
+            lblFiboResult.Text = "F_n: ";
             // 
-            // button3
+            // btnCalculateFibo
             // 
-            button3.Location = new Point(81, 304);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 23);
-            button3.TabIndex = 8;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
+            btnCalculateFibo.Location = new Point(81, 304);
+            btnCalculateFibo.Name = "btnCalculateFibo";
+            btnCalculateFibo.Size = new Size(75, 23);
+            btnCalculateFibo.TabIndex = 8;
+            btnCalculateFibo.Text = "button3";
+            btnCalculateFibo.UseVisualStyleBackColor = true;
+            btnCalculateFibo.Click += btnCalculateFibo_Click;
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Location = new Point(472, 222);
             label7.Name = "label7";
-            label7.Size = new Size(38, 15);
+            label7.Size = new Size(43, 15);
             label7.TabIndex = 15;
-            label7.Text = "label7";
+            label7.Text = "Power ";
             // 
             // inputPower
             // 
@@ -172,18 +175,19 @@
             lblPowerResult.AutoSize = true;
             lblPowerResult.Location = new Point(578, 281);
             lblPowerResult.Name = "lblPowerResult";
-            lblPowerResult.Size = new Size(38, 15);
+            lblPowerResult.Size = new Size(46, 15);
             lblPowerResult.TabIndex = 13;
-            lblPowerResult.Text = "label8";
+            lblPowerResult.Text = "Power: ";
             // 
-            // button4
+            // btnCalculatePower
             // 
-            button4.Location = new Point(472, 307);
-            button4.Name = "button4";
-            button4.Size = new Size(75, 23);
-            button4.TabIndex = 12;
-            button4.Text = "button4";
-            button4.UseVisualStyleBackColor = true;
+            btnCalculatePower.Location = new Point(472, 307);
+            btnCalculatePower.Name = "btnCalculatePower";
+            btnCalculatePower.Size = new Size(75, 23);
+            btnCalculatePower.TabIndex = 12;
+            btnCalculatePower.Text = "button4";
+            btnCalculatePower.UseVisualStyleBackColor = true;
+            btnCalculatePower.Click += btnCalculatePower_Click;
             // 
             // inputBase
             // 
@@ -197,18 +201,18 @@
             label9.AutoSize = true;
             label9.Location = new Point(428, 249);
             label9.Name = "label9";
-            label9.Size = new Size(38, 15);
+            label9.Size = new Size(34, 15);
             label9.TabIndex = 17;
-            label9.Text = "label9";
+            label9.Text = "Base:";
             // 
             // label10
             // 
             label10.AutoSize = true;
             label10.Location = new Point(422, 281);
             label10.Name = "label10";
-            label10.Size = new Size(44, 15);
+            label10.Size = new Size(43, 15);
             label10.TabIndex = 18;
-            label10.Text = "label10";
+            label10.Text = "Power:";
             // 
             // Form1
             // 
@@ -221,19 +225,19 @@
             Controls.Add(label7);
             Controls.Add(inputPower);
             Controls.Add(lblPowerResult);
-            Controls.Add(button4);
+            Controls.Add(btnCalculatePower);
             Controls.Add(label5);
             Controls.Add(FiboInput);
             Controls.Add(lblFiboResult);
-            Controls.Add(button3);
+            Controls.Add(btnCalculateFibo);
             Controls.Add(label3);
             Controls.Add(txtArrayInput);
             Controls.Add(lblSumResult);
-            Controls.Add(button2);
+            Controls.Add(btnCalculateSum);
             Controls.Add(label2);
             Controls.Add(txtInput);
             Controls.Add(lblResult);
-            Controls.Add(button1);
+            Controls.Add(btnCalculateFactorial);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -242,24 +246,24 @@
 
         #endregion
 
-        private Button button1;
+        private Button btnCalculateFactorial;
         private Label lblResult;
         private TextBox txtInput;
         private Label label2;
         private Label label3;
         private TextBox txtArrayInput;
         private Label lblSumResult;
-        private Button button2;
+        private Button btnCalculateSum;
         private Label label5;
         private TextBox FiboInput;
         private Label lblFiboResult;
-        private Button button3;
+        private Button btnCalculateFibo;
         private Label label7;
         private TextBox inputPower;
-        private Label lblPowerResult;
-        private Button button4;
+        private Button btnCalculatePower;
         private TextBox inputBase;
         private Label label9;
         private Label label10;
+        internal Label lblPowerResult;
     }
 }

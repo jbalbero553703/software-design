@@ -7,6 +7,9 @@ namespace lab2
             InitializeComponent();
         }
 
+
+        // Recursive Factorial
+
         public int RecursiveFactorial(int n)
         {
             if (n == 0) return 1;
@@ -20,6 +23,9 @@ namespace lab2
             lblResult.Text = $"Factorial: {result}";
         }
 
+
+        // Recursive Array Sum
+
         public int RecursiveSum(int[] numbers, int n)
         {
             if (n == 0) return numbers[0];
@@ -32,6 +38,10 @@ namespace lab2
             int result = RecursiveSum(numbers, numbers.Length - 1);
             lblSumResult.Text = $"Sum: {result}";
         }
+
+
+        // Recursive Fibonacci
+
         public int RecursiveFibonacci(int n)
         {
             if (n == 0)
@@ -40,12 +50,16 @@ namespace lab2
                 return 1;
             return RecursiveFibonacci(n - 1) + RecursiveFibonacci(n - 2);
         }
-        private void FiboCal_Click(object sender, EventArgs e)
+
+        private void btnCalculateFibo_Click(object sender, EventArgs e)
         {
             int number = int.Parse(FiboInput.Text);
             int result = RecursiveFibonacci(number);
-            lblFiboResult.Text = $"F = {result}";
+            lblFiboResult.Text = $"F_{number} = {result}";
         }
+
+
+        // Recursive Power
 
         public int RecursivePower(int n, int power)
         {
@@ -53,7 +67,7 @@ namespace lab2
             return n * RecursivePower(n, power - 1);
         }
 
-        private void btnPowerCalculate_Click(object sender, EventArgs e)
+        private void btnCalculatePower_Click(object sender, EventArgs e)
         {
             int baseNum = int.Parse(inputBase.Text);
             int exponent = int.Parse(inputPower.Text);
