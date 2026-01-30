@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             button1 = new Button();
-            label1 = new Label();
-            textBox1 = new TextBox();
+            lblResult = new Label();
+            txtInput = new TextBox();
             label2 = new Label();
             label3 = new Label();
-            textBox2 = new TextBox();
-            label4 = new Label();
+            txtArrayInput = new TextBox();
+            lblSumResult = new Label();
             button2 = new Button();
             label5 = new Label();
-            textBox3 = new TextBox();
-            label6 = new Label();
+            FiboInput = new TextBox();
+            lblFiboResult = new Label();
             button3 = new Button();
             label7 = new Label();
-            textBox4 = new TextBox();
-            label8 = new Label();
+            inputPower = new TextBox();
+            lblPowerResult = new Label();
             button4 = new Button();
-            textBox5 = new TextBox();
+            inputBase = new TextBox();
             label9 = new Label();
             label10 = new Label();
             SuspendLayout();
@@ -58,21 +58,21 @@
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // lblResult
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(187, 101);
-            label1.Name = "label1";
-            label1.Size = new Size(38, 15);
-            label1.TabIndex = 1;
-            label1.Text = "label1";
+            lblResult.AutoSize = true;
+            lblResult.Location = new Point(187, 101);
+            lblResult.Name = "lblResult";
+            lblResult.Size = new Size(38, 15);
+            lblResult.TabIndex = 1;
+            lblResult.Text = "label1";
             // 
-            // textBox1
+            // txtInput
             // 
-            textBox1.Location = new Point(81, 98);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 2;
+            txtInput.Location = new Point(81, 98);
+            txtInput.Name = "txtInput";
+            txtInput.Size = new Size(100, 23);
+            txtInput.TabIndex = 2;
             // 
             // label2
             // 
@@ -92,21 +92,21 @@
             label3.TabIndex = 7;
             label3.Text = "label3";
             // 
-            // textBox2
+            // txtArrayInput
             // 
-            textBox2.Location = new Point(481, 101);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 6;
+            txtArrayInput.Location = new Point(481, 101);
+            txtArrayInput.Name = "txtArrayInput";
+            txtArrayInput.Size = new Size(100, 23);
+            txtArrayInput.TabIndex = 6;
             // 
-            // label4
+            // lblSumResult
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(587, 104);
-            label4.Name = "label4";
-            label4.Size = new Size(38, 15);
-            label4.TabIndex = 5;
-            label4.Text = "label4";
+            lblSumResult.AutoSize = true;
+            lblSumResult.Location = new Point(587, 104);
+            lblSumResult.Name = "lblSumResult";
+            lblSumResult.Size = new Size(38, 15);
+            lblSumResult.TabIndex = 5;
+            lblSumResult.Text = "label4";
             // 
             // button2
             // 
@@ -126,21 +126,21 @@
             label5.TabIndex = 11;
             label5.Text = "label5";
             // 
-            // textBox3
+            // FiboInput
             // 
-            textBox3.Location = new Point(81, 275);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(100, 23);
-            textBox3.TabIndex = 10;
+            FiboInput.Location = new Point(81, 275);
+            FiboInput.Name = "FiboInput";
+            FiboInput.Size = new Size(100, 23);
+            FiboInput.TabIndex = 10;
             // 
-            // label6
+            // lblFiboResult
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(187, 278);
-            label6.Name = "label6";
-            label6.Size = new Size(38, 15);
-            label6.TabIndex = 9;
-            label6.Text = "label6";
+            lblFiboResult.AutoSize = true;
+            lblFiboResult.Location = new Point(187, 278);
+            lblFiboResult.Name = "lblFiboResult";
+            lblFiboResult.Size = new Size(38, 15);
+            lblFiboResult.TabIndex = 9;
+            lblFiboResult.Text = "label6";
             // 
             // button3
             // 
@@ -160,21 +160,21 @@
             label7.TabIndex = 15;
             label7.Text = "label7";
             // 
-            // textBox4
+            // inputPower
             // 
-            textBox4.Location = new Point(472, 278);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(100, 23);
-            textBox4.TabIndex = 14;
+            inputPower.Location = new Point(472, 278);
+            inputPower.Name = "inputPower";
+            inputPower.Size = new Size(100, 23);
+            inputPower.TabIndex = 14;
             // 
-            // label8
+            // lblPowerResult
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(578, 281);
-            label8.Name = "label8";
-            label8.Size = new Size(38, 15);
-            label8.TabIndex = 13;
-            label8.Text = "label8";
+            lblPowerResult.AutoSize = true;
+            lblPowerResult.Location = new Point(578, 281);
+            lblPowerResult.Name = "lblPowerResult";
+            lblPowerResult.Size = new Size(38, 15);
+            lblPowerResult.TabIndex = 13;
+            lblPowerResult.Text = "label8";
             // 
             // button4
             // 
@@ -185,12 +185,12 @@
             button4.Text = "button4";
             button4.UseVisualStyleBackColor = true;
             // 
-            // textBox5
+            // inputBase
             // 
-            textBox5.Location = new Point(472, 249);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(100, 23);
-            textBox5.TabIndex = 16;
+            inputBase.Location = new Point(472, 249);
+            inputBase.Name = "inputBase";
+            inputBase.Size = new Size(100, 23);
+            inputBase.TabIndex = 16;
             // 
             // label9
             // 
@@ -217,22 +217,22 @@
             ClientSize = new Size(800, 450);
             Controls.Add(label10);
             Controls.Add(label9);
-            Controls.Add(textBox5);
+            Controls.Add(inputBase);
             Controls.Add(label7);
-            Controls.Add(textBox4);
-            Controls.Add(label8);
+            Controls.Add(inputPower);
+            Controls.Add(lblPowerResult);
             Controls.Add(button4);
             Controls.Add(label5);
-            Controls.Add(textBox3);
-            Controls.Add(label6);
+            Controls.Add(FiboInput);
+            Controls.Add(lblFiboResult);
             Controls.Add(button3);
             Controls.Add(label3);
-            Controls.Add(textBox2);
-            Controls.Add(label4);
+            Controls.Add(txtArrayInput);
+            Controls.Add(lblSumResult);
             Controls.Add(button2);
             Controls.Add(label2);
-            Controls.Add(textBox1);
-            Controls.Add(label1);
+            Controls.Add(txtInput);
+            Controls.Add(lblResult);
             Controls.Add(button1);
             Name = "Form1";
             Text = "Form1";
@@ -243,22 +243,22 @@
         #endregion
 
         private Button button1;
-        private Label label1;
-        private TextBox textBox1;
+        private Label lblResult;
+        private TextBox txtInput;
         private Label label2;
         private Label label3;
-        private TextBox textBox2;
-        private Label label4;
+        private TextBox txtArrayInput;
+        private Label lblSumResult;
         private Button button2;
         private Label label5;
-        private TextBox textBox3;
-        private Label label6;
+        private TextBox FiboInput;
+        private Label lblFiboResult;
         private Button button3;
         private Label label7;
-        private TextBox textBox4;
-        private Label label8;
+        private TextBox inputPower;
+        private Label lblPowerResult;
         private Button button4;
-        private TextBox textBox5;
+        private TextBox inputBase;
         private Label label9;
         private Label label10;
     }

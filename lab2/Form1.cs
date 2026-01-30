@@ -53,18 +53,10 @@ namespace lab2
             return n * RecursivePower(n, power - 1);
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            int baseNum = int.Parse(inputx.Text);
-            int exponent = int.Parse(inputpower.Text);
-            int result = RecursivePower(baseNum, exponent);
-            lblPowerResult.Text = $"Result: {result}";
-        }
-
         private void btnPowerCalculate_Click(object sender, EventArgs e)
         {
-            int baseNum = int.Parse(inputx.Text);
-            int exponent = int.Parse(inputpower.Text);
+            int baseNum = int.Parse(inputBase.Text);
+            int exponent = int.Parse(inputPower.Text);
             int result = RecursivePower(baseNum, exponent);
             lblPowerResult.Text = $"Power: {result}";
         }
