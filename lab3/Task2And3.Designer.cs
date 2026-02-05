@@ -49,6 +49,7 @@
             button1.TabIndex = 1;
             button1.Text = "Show List";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += this.button1_Click;
             // 
             // Task2_3
             // 
