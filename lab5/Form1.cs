@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using static lab5.Form1;
 
 namespace lab5
 {
@@ -63,11 +64,7 @@ namespace lab5
             string bookName = txtBookTitle.Text;
             string authorName = txtAuthorName.Text;
             AddAuthorWithBook(authorName, bookName);
-            LoadList();
-        }
-
-        public void btnRefreshList_Click(object sender, EventArgs e)
-        {
+            MessageBox.Show("Book and Author added successfully!");
             LoadList();
         }
 
@@ -75,23 +72,14 @@ namespace lab5
         {
             using (var context = new BookstoreContext())
             {
-                var book = context.Books.Include(b => b.Author).FirstOrDefault(b => b.BookId == bookId);
-
-                if (book == null)
-                    return;
-
-                if (book.Author == null && book.AuthorId != 0)
+                var book = context.Books.Include(b => b.Author)
+                                        .FirstOrDefault(b => b.BookId == bookId);
+                if (book != null)
                 {
-                    book.Author = context.Authors.Find(book.AuthorId);
-                }
-
-                book.Title = newTitle;
-                if (book.Author != null)
-                {
+                    book.Title = newTitle;
                     book.Author.Name = newAuthorName;
+                    context.SaveChanges();
                 }
-
-                context.SaveChanges();
             }
         }
 
@@ -101,6 +89,40 @@ namespace lab5
             UpdateBookAndAuthor(bookId, txtBookTitle.Text, txtAuthorName.Text);
             MessageBox.Show("Book and Author updated successfully!");
             LoadList();
+        }
+
+        private void btnShowBooks_Click(object sender, EventArgs e)
+        {
+            LoadList();
+        }
+
+        private void btnDeleteBook_Click(object sender, EventArgs e)
+        {
+            int bookId = int.Parse(txtBookID.Text);
+            using (var context = new BookstoreContext())
+            {
+                var book = context.Books.FirstOrDefault(b => b.BookId == bookId);
+                if (book != null)
+                {
+                    context.Books.Remove(book);
+                    context.SaveChanges();
+                    MessageBox.Show("Book deleted successfully!");
+                    LoadList();
+                }
+                else
+                {
+                    MessageBox.Show("Book not found!");
+                }
+            }
+        }
+
+        private void txtSearchBox_TextChanged(object sender, EventArgs e)
+        {
+            string searchTerm = txtSearchBox.Text.ToLower();
+            var filteredBooks = GetBooksWithAuthors()
+                .Where(b => b.ToLower().Contains(searchTerm))
+                .ToList();
+            listBoxBooks.DataSource = filteredBooks;
         }
     }
 }
