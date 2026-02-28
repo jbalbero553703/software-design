@@ -46,7 +46,7 @@ namespace lab5
             {
                 var booksWithAuthors = context.Books
                     .Include(b => b.Author)
-                    .Select(b => $"{b.BookId} - {b.Author.Name} by {b.Title}")
+                    .Select(b => $"{b.BookId} - {b.Title} by {b.Author.Name}")
                     .ToList();
 
                 return booksWithAuthors;
