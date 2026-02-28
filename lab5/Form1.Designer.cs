@@ -32,16 +32,16 @@
             txtBookTitle = new Krypton.Toolkit.KryptonTextBox();
             btnAddBook = new Krypton.Toolkit.KryptonButton();
             listBoxBooks = new Krypton.Toolkit.KryptonListBox();
-            kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
-            kryptonLabel2 = new Krypton.Toolkit.KryptonLabel();
             btnShowBooks = new Krypton.Toolkit.KryptonButton();
             groupBox1 = new GroupBox();
-            kryptonLabel4 = new Krypton.Toolkit.KryptonLabel();
             txtSearchBox = new Krypton.Toolkit.KryptonTextBox();
             btnDeleteBook = new Krypton.Toolkit.KryptonButton();
             btnUpdateBook = new Krypton.Toolkit.KryptonButton();
-            kryptonLabel3 = new Krypton.Toolkit.KryptonLabel();
             txtBookID = new Krypton.Toolkit.KryptonTextBox();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -77,24 +77,6 @@
             listBoxBooks.TabIndex = 9;
             listBoxBooks.TabStop = false;
             // 
-            // kryptonLabel1
-            // 
-            kryptonLabel1.Location = new Point(41, 162);
-            kryptonLabel1.Name = "kryptonLabel1";
-            kryptonLabel1.Size = new Size(90, 25);
-            kryptonLabel1.TabIndex = 4;
-            kryptonLabel1.TabStop = false;
-            kryptonLabel1.Values.Text = "Author:";
-            // 
-            // kryptonLabel2
-            // 
-            kryptonLabel2.Location = new Point(41, 229);
-            kryptonLabel2.Name = "kryptonLabel2";
-            kryptonLabel2.Size = new Size(90, 25);
-            kryptonLabel2.TabIndex = 5;
-            kryptonLabel2.TabStop = false;
-            kryptonLabel2.Values.Text = "Book:";
-            // 
             // btnShowBooks
             // 
             btnShowBooks.Location = new Point(41, 360);
@@ -107,33 +89,25 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(kryptonLabel4);
+            groupBox1.Controls.Add(label4);
+            groupBox1.Controls.Add(label3);
+            groupBox1.Controls.Add(label2);
+            groupBox1.Controls.Add(label1);
             groupBox1.Controls.Add(txtSearchBox);
             groupBox1.Controls.Add(btnDeleteBook);
-            groupBox1.Controls.Add(kryptonLabel1);
             groupBox1.Controls.Add(btnUpdateBook);
             groupBox1.Controls.Add(btnShowBooks);
             groupBox1.Controls.Add(txtAuthorName);
-            groupBox1.Controls.Add(kryptonLabel3);
-            groupBox1.Controls.Add(kryptonLabel2);
             groupBox1.Controls.Add(txtBookID);
             groupBox1.Controls.Add(txtBookTitle);
             groupBox1.Controls.Add(btnAddBook);
+            groupBox1.ForeColor = SystemColors.Control;
             groupBox1.Location = new Point(12, 12);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(300, 426);
             groupBox1.TabIndex = 8;
             groupBox1.TabStop = false;
             groupBox1.Text = "Add Book";
-            // 
-            // kryptonLabel4
-            // 
-            kryptonLabel4.Location = new Point(41, 42);
-            kryptonLabel4.Name = "kryptonLabel4";
-            kryptonLabel4.Size = new Size(90, 25);
-            kryptonLabel4.TabIndex = 8;
-            kryptonLabel4.TabStop = false;
-            kryptonLabel4.Values.Text = "Search Book:";
             // 
             // txtSearchBox
             // 
@@ -163,15 +137,6 @@
             btnUpdateBook.Values.Text = "Update Book";
             btnUpdateBook.Click += btnUpdateBook_Click;
             // 
-            // kryptonLabel3
-            // 
-            kryptonLabel3.Location = new Point(41, 102);
-            kryptonLabel3.Name = "kryptonLabel3";
-            kryptonLabel3.Size = new Size(90, 25);
-            kryptonLabel3.TabIndex = 1;
-            kryptonLabel3.TabStop = false;
-            kryptonLabel3.Values.Text = "Book ID:";
-            // 
             // txtBookID
             // 
             txtBookID.Location = new Point(41, 133);
@@ -179,11 +144,56 @@
             txtBookID.Size = new Size(220, 23);
             txtBookID.TabIndex = 1;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.ForeColor = SystemColors.Control;
+            label1.Location = new Point(41, 55);
+            label1.Name = "label1";
+            label1.Size = new Size(75, 15);
+            label1.TabIndex = 8;
+            label1.Text = "Search Book:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.ForeColor = SystemColors.Control;
+            label2.Location = new Point(41, 115);
+            label2.Name = "label2";
+            label2.Size = new Size(51, 15);
+            label2.TabIndex = 9;
+            label2.Text = "Book ID:";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.ForeColor = SystemColors.Control;
+            label3.Location = new Point(41, 175);
+            label3.Name = "label3";
+            label3.Size = new Size(47, 15);
+            label3.TabIndex = 10;
+            label3.Text = "Author:";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
+            label4.ForeColor = SystemColors.Control;
+            label4.Location = new Point(41, 242);
+            label4.Name = "label4";
+            label4.Size = new Size(63, 15);
+            label4.TabIndex = 11;
+            label4.Text = "Book Title:";
+            // 
             // Form1
             // 
             AcceptButton = btnAddBook;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(40, 164, 153);
             ClientSize = new Size(800, 450);
             Controls.Add(groupBox1);
             Controls.Add(listBoxBooks);
@@ -200,15 +210,15 @@
         private Krypton.Toolkit.KryptonTextBox txtBookTitle;
         private Krypton.Toolkit.KryptonButton btnAddBook;
         private Krypton.Toolkit.KryptonListBox listBoxBooks;
-        private Krypton.Toolkit.KryptonLabel kryptonLabel1;
-        private Krypton.Toolkit.KryptonLabel kryptonLabel2;
         private Krypton.Toolkit.KryptonButton btnShowBooks;
         private GroupBox groupBox1;
         private Krypton.Toolkit.KryptonButton btnUpdateBook;
-        private Krypton.Toolkit.KryptonLabel kryptonLabel3;
         private Krypton.Toolkit.KryptonTextBox txtBookID;
         private Krypton.Toolkit.KryptonButton btnDeleteBook;
-        private Krypton.Toolkit.KryptonLabel kryptonLabel4;
         private Krypton.Toolkit.KryptonTextBox txtSearchBox;
+        private Label label4;
+        private Label label3;
+        private Label label2;
+        private Label label1;
     }
 }
